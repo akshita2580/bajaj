@@ -18,9 +18,9 @@ public class StartupRunner implements ApplicationRunner {
 
         // 1. Generate webhook
         String url = "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA";
-        String regNo = "22ucs013"; // <-- apna regNo daalein
-        String name = "akshita";  // <-- apna naam daalein
-        String email = "22ucs013@lnmiit.ac.in"; // <-- apna email daalein
+        String regNo = "22ucs013"; 
+        String name = "akshita";  
+        String email = "22ucs013@lnmiit.ac.in"; 
 
         String requestBody = String.format("{\"name\":\"%s\",\"regNo\":\"%s\",\"email\":\"%s\"}", name, regNo, email);
 
@@ -49,8 +49,7 @@ public class StartupRunner implements ApplicationRunner {
             : "https://drive.google.com/file/d/1IeSI6I6KoSqAFFRihIT9tEDICtoz-G/view?usp=sharing";
         System.out.println("Question URL: " + questionUrl);
 
-        // 3. Solve the SQL problem (example query for demonstration)
-        // Example: Find employees with salary greater than average salary
+        // 3. Solve the SQL problem 
         String finalQuery = "SELECT * FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);";
 
         // 4. Submit solution
